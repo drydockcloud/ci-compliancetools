@@ -5,7 +5,9 @@ LABEL exposed.command.multiple.createfile=createfile \
 
 COPY results.sh /
 COPY requirements.txt /
-RUN apk add git \
+RUN set -eux ; \
+    && apk add git \
+    && apk add build-base \
     && pip install -r /requirements.txt \
     && pip install git+https://github.com/CivicActions/compliancetools.git#egg=compliancetools \
     && wget -O /usr/local/bin/gh-mod-toc https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc \
