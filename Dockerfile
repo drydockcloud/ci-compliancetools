@@ -3,8 +3,6 @@ LABEL exposed.command.multiple.createfile=createfile \
       exposed.command.multiple.makefamilies=makefamilies \
       exposed.command.multiple.makessp=makessp
 
-ENV PATH=$PATH:/usr/local/bin
-
 COPY results.sh /
 COPY requirements.txt /
 RUN apk add git && \
