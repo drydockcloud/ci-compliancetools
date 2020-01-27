@@ -17,5 +17,5 @@ RUN set -eux ; \
 
 VOLUME /results
 WORKDIR /src
-# ENTRYPOINT ["/results.sh"]
+ENTRYPOINT ["/results.sh"]
 CMD ["--help"]
