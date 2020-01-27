@@ -1,5 +1,5 @@
 FROM python:3.7-alpine
-LABEL exposed.command.multiple.createfile=createfile \
+LABEL exposed.command.multiple.createfiles=createfiles \
       exposed.command.multiple.makefamilies=makefamilies \
       exposed.command.multiple.makessp=makessp
 
