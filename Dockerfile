@@ -4,6 +4,7 @@ LABEL exposed.command.multiple.createfiles=createfiles \
       exposed.command.multiple.makessp=makessp
 
 ENV PATH=$PATH:/usr/local/bin
+ENV buildversion=2
 
 COPY results.sh /
 COPY requirements.txt /
