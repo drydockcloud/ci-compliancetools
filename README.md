@@ -10,10 +10,6 @@ You will need to have Docker installed. See the [Install Docker docs](https://do
 
 [Available on Docker Hub](https://hub.docker.com/r/drydockcloud/ci-secrender)
 
-## Authors
-
-* **Tom Camp** - [Tom-Camp](https://github.com/Tom-Camp)
-
 ## License
 
 This project is licensed under the GNU General Public License - see the [LICENSE](LICENSE) file for details.
