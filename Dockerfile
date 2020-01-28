@@ -11,7 +11,7 @@ RUN set -eux ; \
     apk add git \
     && apk add build-base \
     && pip install -r /requirements.txt \
-    && pip install git+https://github.com/CivicActions/compliancetools.git#egg=compliancetools \
+    && pip install -I git+https://github.com/CivicActions/compliancetools.git#egg=compliancetools \
     && wget -O /usr/local/bin/gh-md-toc https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc \
     && chmod a+x /usr/local/bin/gh-md-toc
 
