@@ -4,17 +4,14 @@ LABEL exposed.command.multiple.createfiles=createfiles \
       exposed.command.multiple.makessp=makessp
 
 ENV PATH=$PATH:/usr/local/bin
-ENV buildversion=3
+ENV buildversion=4
 
 COPY results.sh /
 COPY requirements.txt /
 RUN set -eux ; \
-    apk add git bash curl \
     && apk add build-base \
     && pip install -r /requirements.txt \
-    && pip install git+https://github.com/CivicActions/compliancetools.git#egg=compliancetools \
-    && wget -O /usr/local/bin/gh-md-toc https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc \
-    && chmod a+x /usr/local/bin/gh-md-toc
+    && pip install git+https://github.com/CivicActions/compliancetools.git#egg=compliancetools
 
 VOLUME /results
 WORKDIR /src
