@@ -15,4 +15,3 @@ RUN set -eux ; \
 
 VOLUME /results
 WORKDIR /src
-ENTRYPOINT ["/results.sh"]
