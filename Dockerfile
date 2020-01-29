@@ -9,7 +9,7 @@ ENV buildversion=4
 COPY results.sh /
 COPY requirements.txt /
 RUN set -eux ; \
-    apk add build-base \
+    apk add git build-base \
     && pip install -r /requirements.txt \
     && pip install git+https://github.com/CivicActions/compliancetools.git#egg=compliancetools
 
