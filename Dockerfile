@@ -11,7 +11,7 @@ COPY requirements.txt /
 RUN set -eux ; \
     apk add git build-base \
     && pip install -r /requirements.txt \
-    && pip install git+https://github.com/CivicActions/compliancetools.git@v0.0.2#egg=compliancetools
+    && pip install git+https://github.com/CivicActions/compliancetools.git@v0.1.1#egg=compliancetools
 
 VOLUME /results
 WORKDIR /src
