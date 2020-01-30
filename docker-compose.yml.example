@@ -1,0 +1,6 @@
+version: '3'
+services:
+  compliancetools-cli:
+    image: drydockcloud/ci-compliancetools
+    volumes:
+      - .:/src

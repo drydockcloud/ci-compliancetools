@@ -10,6 +10,15 @@ You will need to have Docker installed. See the [Install Docker docs](https://do
 
 [Available on Docker Hub](https://hub.docker.com/r/drydockcloud/ci-secrender)
 
+## Usage
+
+1. Add the `activate` script and a `docker-compose.yml` file to your project root. Examples of these files are included in this repository.
+1. Run `docker-compose pull`.
+1. Run `. activate`.
+1. Run any of the commands available to you; `createfiles`, `makefamilies`, and `makessp`
+
+For more information about the commands, see the [documentation for compliancetools](https://github.com/CivicActions/compliancetools).
+
 ## License
 
 This project is licensed under the GNU General Public License - see the [LICENSE](LICENSE) file for details.
