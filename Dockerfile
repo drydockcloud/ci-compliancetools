@@ -10,6 +10,9 @@ ENV buildversion=6
 
 COPY results.sh /
 COPY requirements.txt /
+
+WORKDIR /src
+
 RUN set -eux ; \
     apt-get update \
     && apt-get install git pandoc -y \
@@ -18,4 +21,3 @@ RUN set -eux ; \
     && git clone https://github.com/opencontrol/certifications.git
 
 VOLUME /results
-WORKDIR /src
