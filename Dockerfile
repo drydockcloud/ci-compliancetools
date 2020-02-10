@@ -14,7 +14,8 @@ RUN set -eux ; \
     apt-get update \
     && apt-get install git pandoc -y \
     && pip install -r /requirements.txt \
-    && pip install git+https://github.com/CivicActions/compliancetools.git@v0.1.3#egg=compliancetools
+    && pip install git+https://github.com/CivicActions/compliancetools.git@v0.1.3#egg=compliancetools \
+    && git clone git@github.com:opencontrol/certifications.git
 
 VOLUME /results
 WORKDIR /src
