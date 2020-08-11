@@ -7,7 +7,10 @@ LABEL exposed.command.multiple.createfiles=createfiles \
       exposed.command.multiple.makessp=makessp \
       exposed.command.multiple.exportto=exportto \
       exposed.command.multiple.creatematrix=creatematrix \
-      exposed.command.multiple.selectcontrols=selectcontrols
+      exposed.command.multiple.selectcontrols=selectcontrols \
+      exposed.command.multiple.status=status \
+      exposed.command.multiple.xlwriter=xlwriter
+
 
 ENV PATH=$PATH:/usr/local/bin
 ENV buildversion=6
