@@ -23,6 +23,6 @@ RUN set -eux ; \
     apt-get update \
     && apt-get install git pandoc -y \
     && pip install -r /requirements.txt \
-    && pip install git+https://github.com/CivicActions/compliancetools.git@v0.1.21#egg=compliancetools
+    && pip install git+https://github.com/CivicActions/compliancetools.git@v0.1.22#egg=compliancetools
 
 VOLUME /results
