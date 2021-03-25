@@ -3,6 +3,6 @@ click==7.0
 fpyutils==1.1.0
 md-toc==6.0.2
 pyyaml-include==1.2
-pyyaml==5.3
+pyyaml==5.4
 rtyaml==1.0.0
 git+https://github.com/CivicActions/secrender.git@v0.5.0#egg=secrender
