@@ -8,7 +8,8 @@ LABEL exposed.command.multiple.createfiles=createfiles \
       exposed.command.multiple.exportto=exportto \
       exposed.command.multiple.creatematrix=creatematrix \
       exposed.command.multiple.selectcontrols=selectcontrols \
-      exposed.command.multiple.xlwriter=xlwriter
+      exposed.command.multiple.xlwriter=xlwriter \
+      exposed.command.multiple.sop=sop
 
 
 ENV PATH=$PATH:/usr/local/bin
@@ -23,6 +24,6 @@ RUN set -eux ; \
     apt-get update \
     && apt-get install git pandoc -y \
     && pip install -r /requirements.txt \
-    && pip install git+https://github.com/CivicActions/compliancetools.git@v0.1.26#egg=compliancetools
+    && pip install git+https://github.com/CivicActions/compliancetools.git@v0.1.27#egg=compliancetools
 
 VOLUME /results
