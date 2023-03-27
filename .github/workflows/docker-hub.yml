@@ -7,7 +7,7 @@ on:
 jobs:
   push_to_registry:
     name: Push Docker image to drydockcloud/ci-compliancetools in Docker Hub
-    runs-on: python-3.9
+    runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
